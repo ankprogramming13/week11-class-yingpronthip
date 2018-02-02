@@ -7,11 +7,17 @@ class Student
 {
 private:
     int id;
+    string name;
+    int age;
+    double height;
     // เพิ่มเอาเอง
 public:
     Student(int i, string n, int a, double h)
     {
         id = i;
+        name = n;
+        age = a;
+        height = h;
 
     }
 
@@ -19,7 +25,9 @@ public:
     {
         return id;
     }
-    // เพิ่มเอาเอง
+    string getName(){
+        return name;}
+
 };
 
 int main ()
